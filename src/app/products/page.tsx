@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import axios from "axios";
 import { useSearchParams, useRouter } from "next/navigation";
 import { Search, ArrowUpRight, Download } from "lucide-react";
@@ -19,7 +19,7 @@ interface Product {
   image_link: string;
 }
 
-export default function ProductCatalog() {
+function ProductCatalogContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState(() => {
@@ -267,5 +267,13 @@ export default function ProductCatalog() {
         </Dialog>
       </div>
     </div>
+  );
+}
+
+export default function ProductCatalog() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ProductCatalogContent />
+    </Suspense>
   );
 }
