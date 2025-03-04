@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, ChangeEvent, FormEvent } from "react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -16,6 +16,7 @@ import { Label } from "@/components/ui/label";
 import { MailOpen, Paperclip, FileUp, X } from "lucide-react";
 import { useLocale } from "../../hooks/useLocals";
 import { t } from "../../utils/i18n";
+import Image from "next/image";
 
 const ContactPage = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -25,17 +26,17 @@ const ContactPage = () => {
     company: "",
     message: ""
   });
-  const [file, setFile] = useState(null);
+  const [file, setFile] = useState<File | null>(null);
   const [fileName, setFileName] = useState("");
-  const fileInputRef = useRef(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleFileChange = (e:any) => {
-    const selectedFile = e.target.files[0];
+  const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const selectedFile = e.target.files?.[0];
     if (selectedFile) {
       // Check if file is a PDF
       if (selectedFile.type !== 'application/pdf') {
@@ -62,7 +63,7 @@ const ContactPage = () => {
     }
   };
 
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -81,7 +82,6 @@ const ContactPage = () => {
       const response = await fetch("/api/send-email", {
         method: "POST",
         body: formDataToSend,
-        // Remove the Content-Type header to let the browser set it with boundary for FormData
       });
 
       if (response.ok) {
@@ -107,14 +107,18 @@ const ContactPage = () => {
       setIsSubmitting(false);
     }
   };
-    const { locale } = useLocale();
+
+  const { locale } = useLocale();
+
   return (
     <div className="flex flex-row min-h-screen bg-white dark:bg-gray-950">
       {/* Side Image */}
       <div className="w-1/2 overflow-hidden hidden lg:block">
-        <img 
+        <Image 
           src="/images/contact-us.jpg" 
           alt="Contact us" 
+          width={800}  // Adjust width and height as needed
+          height={600}
           className="object-cover w-full h-full"
         />
       </div>

@@ -133,7 +133,7 @@ const SearchPopup = ({ isOpen, onClose, onProductSelect }: SearchPopupProps) => 
             {/* No Results */}
             {!isLoading && searchQuery && searchResults.length === 0 && (
               <div className="text-center py-8">
-                <p className="text-gray-600">No products found for "{searchQuery}"</p>
+               <p className="text-gray-600">No products found for &quot;{searchQuery}&quot;</p>
               </div>
             )}
 

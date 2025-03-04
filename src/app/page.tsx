@@ -1,4 +1,3 @@
-import Image from "next/image";
 import LowBanner from "@/components/LowBanner";
 import ProductShowCase from "@/components/ProductShowCase";
 import IndustryApplications from "@/components/IndustryApplications"

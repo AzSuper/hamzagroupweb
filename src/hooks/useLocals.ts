@@ -1,10 +1,8 @@
 "use client"
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
 
 export function useLocale() {
   const [locale, setLocale] = useState<"en" | "ar">("en");
-  const router = useRouter();
 
   useEffect(() => {
     // Get saved locale or default to 'en'

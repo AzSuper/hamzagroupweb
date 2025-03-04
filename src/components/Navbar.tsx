@@ -33,7 +33,6 @@ const Navbar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
-  const router = useRouter();
   const pathname = usePathname();
 
   // Menu items

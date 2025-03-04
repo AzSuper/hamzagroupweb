@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { motion, useSpring, useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { featuresData, Feature } from "../constant/featuresData";
 import { useLocale } from "../hooks/useLocals";
 import { t } from "../utils/i18n";
@@ -13,7 +13,7 @@ const Counter = ({ value, className }: { value: number; className: string }) => 
   const [displayValue, setDisplayValue] = useState(0);
   
   useEffect(() => {
-    let startValue = 0;
+    const startValue = 0;
     let animationFrameId: number;
     let startTime: number | null = null;
     const duration = 2000; // 2 seconds duration
@@ -54,7 +54,7 @@ const Counter = ({ value, className }: { value: number; className: string }) => 
 
 const LowBanner = () => {
   const { locale } = useLocale();
-  const [features, setFeatures] = useState<Feature[]>(featuresData);
+  const [features] = useState<Feature[]>(featuresData);
   
   return (
     <div className="w-full xl:h-[100px] md:h-[100px] sm:h-fit bg-[#0e0e0e] flex md:flex-row flex-col xl:flex-row gap-[28px] xl:items-center md:items-center md:pl-[75px] md:pr-[75px] xl:pl-[75px] xl:pr-[75px] justify-center py-7 px-4">

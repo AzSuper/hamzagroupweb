@@ -428,7 +428,7 @@ export default function Home() {
       
       {materials.length === 0 ? (
         <div className="text-center py-8 bg-gray-50 rounded-lg">
-          <p className="text-gray-500">No materials added yet. Click "Add New Material" to get started.</p>
+          <p className="text-gray-500">No materials added yet. Click &quot;Add New Material&quot; to get started.</p>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -566,7 +566,7 @@ export default function Home() {
                           </p>
                           <img 
                             src={material.image_link} 
-                            alt={material.name} 
+                            alt={`${material.name}`} 
                             className="max-h-32 rounded-md object-contain bg-gray-50"
                           />
                         </div>
