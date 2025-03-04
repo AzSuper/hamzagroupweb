@@ -1,0 +1,11 @@
+{
+    "company": "COMPANY",
+    "about": "ABOUT",
+    "product": "PRODUCT",
+    "contact": "CONTACT",
+    "loading": "Loading...",
+    "error": {
+      "general": "Something went wrong",
+      "language": "Failed to switch language"
+    }
+  }

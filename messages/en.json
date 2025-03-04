@@ -1,0 +1,106 @@
+{
+  "landing" : {
+    
+  "logo": "Logo",
+
+  
+  "headline": "Your Trusted Partner in Chemical Imports Since 2001",
+  "subheadline": "Delivering Quality Chemicals Worldwide with Over Two Decades of Expertise",
+
+  "stats": {
+    "clients": "Client Depend on our Services",
+    "materials": "High Quality Materials We Import",
+    "industries": "Industries in Market Rely on Our Material",
+    "countries": "Countries We Import Material From"
+  },
+
+  "explore": {
+    "title": "Explore Our Products",
+    "all": "Explore All",
+    "explore": "Explore"
+  },
+
+  "applications": {
+    "title": "Where Our Materials Are Used",
+    "description": "We are part of various industry applications since 2001",
+    "subtitle":"Some of the applications:",
+    "list": {
+      "one" : "Pharmaceuticals",
+      "two" : "Self Care",
+      "three" : "Food Industry",
+      "four" : "Heavy Industry",
+      "five" : "Furniture Applications"
+    }
+  },
+
+  "clients": {
+    "title": "Some of our Clients:",
+    "list": [
+      "Almeskha",
+      "Albatol",
+      "Millia",
+      "Noura",
+      "Winner",
+      "Hafhafe",
+      "Milliac",
+      "Hamol",
+      "New Gino",
+      "Poztron",
+      "Roots"
+    ]
+  },
+
+  "footer": {
+    "slogan": "Delivering Quality Chemicals Worldwide",
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "product": "Product",
+      "contact": "Contact"
+    },
+    "business_hours": "Business Hours: From 10:00 To 18:00",
+    "email": "hamzagroup145@gmail.com",
+    "phone": "+963 998 768 696",
+    "by": "By Mohammad Abo Zamel",
+    "route": "Static Route"
+  }
+  },
+  "navbar":{
+    "company": "Company",
+    "about": "About",
+    "product": "Product",
+    "contact": "Contact"
+  },
+  "aboutus":{
+    "toptitle":"Get Supplied faster and better with high quality services that suit you.",
+    "topsubtitle":"We are one of the most experienced importing companies in the market. We work with all our expertise just to help you.",
+    "button":"Let's Work",
+    "bottomtitle":"Who we Are ?",
+    "p1":"We are HAMZA group, a 20+ year-old importing company, importing the highest quality raw material for several industries like furniture, food, chemistry, medicine... etc. since 2001."
+    ,"p2":"With our services, we are a solid supplier to over 100 customers, serving both individuals and groups for over 20 years."
+  },
+  "contactus":{
+    "title":"Let's work together ",
+    "subtitle":"Fill out the form below and we'll get back to you shortly",
+    "formhead":"Contact Us",
+    "formsubtitle":"Share your propasal details and we'll respond within 24 hours",
+    "formin1":"Full Name",
+    "formin2":"Email Address",
+    "formin3":"Company Name",
+    "formin4":"How Can We Help You?",
+    "formin5":"Attach CV (PDF only, max 5MB)",
+    "formbtn":"Send Message",
+    "formbtnactive":"Sending....",
+    "cvpurpose": "For career inquiries, please attach your CV in PDF format"
+
+   
+  },
+  "footer":{
+    "company": "Company",
+    "about": "About",
+    "product": "Product",
+    "contact": "Contact",
+    "slogan":"Delivering Quality Chemicals Worldwide",
+    "activehour":"Business Hours: From 10:00 To 18:00"
+  }
+}
