@@ -11,7 +11,6 @@ import {
   CardHeader,
   CardTitle,
   CardDescription,
-  CardFooter
 } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { MailOpen, Paperclip, FileUp, X } from "lucide-react";
@@ -30,12 +29,12 @@ const ContactPage = () => {
   const [fileName, setFileName] = useState("");
   const fileInputRef = useRef(null);
 
-  const handleChange = (e) => {
+  const handleChange = (e:any) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleFileChange = (e) => {
+  const handleFileChange = (e:any) => {
     const selectedFile = e.target.files[0];
     if (selectedFile) {
       // Check if file is a PDF
@@ -63,7 +62,7 @@ const ContactPage = () => {
     }
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e:any) => {
     e.preventDefault();
     setIsSubmitting(true);
 
