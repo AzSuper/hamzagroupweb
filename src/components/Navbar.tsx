@@ -91,7 +91,8 @@ const Navbar = () => {
   const handleLanguageChange = (langCode: string) => {
     setIsChangingLang(true);
     try {
-      changeLocale(langCode);
+      // Assert that langCode is of type "en" | "ar"
+      changeLocale(langCode as "en" | "ar");
       setIsLangOpen(false);
       toast.success(
         `Language changed to ${langCode === "en" ? "English" : "Arabic"}`,
