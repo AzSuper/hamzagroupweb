@@ -29,7 +29,7 @@ const ProductShowCase = () => {
   // Fetch products from API
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/materials")
+      .get("https://hamzaserver-production.up.railway.app/api/materials")
       .then((response) => setProducts(response.data))
       .catch((error) => console.error("Error fetching products:", error));
   }, []);
