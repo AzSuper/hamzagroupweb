@@ -246,7 +246,7 @@ function ProductCatalogContent() {
                           Sample:
                         </h3>
                         <p className="text-sm text-gray-600">
-                          Available upon request
+                           {selectedProduct.desc}
                         </p>
                       </div>
 
