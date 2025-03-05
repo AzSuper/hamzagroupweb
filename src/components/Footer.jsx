@@ -5,22 +5,22 @@ import { useLocale } from "../hooks/useLocals";
 import { t } from "../utils/i18n";
 
 const footerLink = [{
-  link:"http://10.2.0.2:3000",
+  link:"/",
   label:"Home",
   translatekey:"footer.company"
 },
 {
-  link:"http://10.2.0.2:3000/about",
+  link:"/about",
   label:"About",
    translatekey:"footer.about"
 },
 {
-  link:"http://10.2.0.2:3000/products",
+  link:"/products",
   label:"Product",
    translatekey:"footer.product"
 },
 {
-  link:"http://10.2.0.2:3000/contact",
+  link:"/contact",
   label:"Contact",
   translatekey:"footer.contact"
 }]
