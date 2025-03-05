@@ -7,6 +7,8 @@ import { Search, ArrowUpRight, Download } from "lucide-react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { QRCodeSVG } from "qrcode.react";
 import ModernButtons from "../../components/ModernButtons";
+import { useLocale } from "../../hooks/useLocals";
+import { t } from "../../utils/i18n";
 
 interface Product {
   id: number;
@@ -84,24 +86,24 @@ function ProductCatalogContent() {
     link.click();
     document.body.removeChild(link);
   };
+  const { locale } = useLocale();
 
   return (
     <div className="bg-gray-50 p-4 md:p-8 min-h-screen mt-16">
       {/* Header Section */}
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         <h1 className="text-2xl font-semibold text-gray-900 mb-2">
-          Product List
+          {t("product.title", locale)}
         </h1>
         <p className="text-gray-600 mb-6">
-          We are driving the sustainability business centered on eco-friendly
-          materials.
+        {t("product.subtitle", locale)}
         </p>
 
         {/* Search Bar */}
         <div className="relative mb-6 w-[70%]">
           <input
             type="text"
-            placeholder="Search products..."
+            placeholder={t("product.searchlabel", locale)}
             className="w-full px-4 py-3 pl-10 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
@@ -237,7 +239,7 @@ function ProductCatalogContent() {
                           <h3 className="text-sm font-semibold text-gray-800">
                             Source:
                           </h3>
-                          <p className="text-sm text-gray-600">Hongkong Shengqing Materials Co.</p>
+                          <p className="text-sm text-gray-600">Eco-friendly</p>
                         </div>
                       </div>
 
@@ -246,7 +248,16 @@ function ProductCatalogContent() {
                           Sample:
                         </h3>
                         <p className="text-sm text-gray-600">
-                           {selectedProduct.desc}
+                          {selectedProduct.desc}
+                        </p>
+                      </div>
+
+                      <div>
+                        <h3 className="text-sm font-semibold text-gray-800">
+                          Applicant:
+                        </h3>
+                        <p className="text-sm text-gray-600">
+                          Material Research Team
                         </p>
                       </div>
                     </div>
