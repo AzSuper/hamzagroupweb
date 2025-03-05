@@ -249,15 +249,6 @@ function ProductCatalogContent() {
                            {selectedProduct.desc}
                         </p>
                       </div>
-
-                      <div>
-                        <h3 className="text-sm font-semibold text-gray-800">
-                          Applicant:
-                        </h3>
-                        <p className="text-sm text-gray-600">
-                          Material Research Team
-                        </p>
-                      </div>
                     </div>
                   </div>
                 </div>
