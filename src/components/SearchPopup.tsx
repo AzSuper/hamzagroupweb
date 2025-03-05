@@ -36,7 +36,7 @@ const SearchPopup = ({ isOpen, onClose, onProductSelect }: SearchPopupProps) => 
     if (isOpen) {
       setIsLoading(true);
       axios
-        .get("http://localhost:5000/api/materials")
+        .get("https://hamzaserver-production.up.railway.app/api/materials")
         .then((response) => {
           setProducts(response.data);
           // Select 4 random products as recommendations
