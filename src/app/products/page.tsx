@@ -237,7 +237,7 @@ function ProductCatalogContent() {
                           <h3 className="text-sm font-semibold text-gray-800">
                             Source:
                           </h3>
-                          <p className="text-sm text-gray-600">Eco-friendly</p>
+                          <p className="text-sm text-gray-600">Hongkong Shengqing Materials Co.</p>
                         </div>
                       </div>
 
