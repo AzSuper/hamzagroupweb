@@ -1,14 +1,17 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { featuresData, Feature } from "../constant/featuresData";
 import { useLocale } from "../hooks/useLocals";
 import { t } from "../utils/i18n";
 
-// Animation counter component
-const Counter = ({ value, className }: { value: number; className: string }) => {
-  const ref = React.useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+const Counter = ({ value, className }: { value: number; className?: string }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { 
+    once: true, 
+    margin: "-50px", // Adjusted margin for better visibility on small devices
+    amount: 0.1 // Trigger when even a small part of the element is in view
+  });
   
   const [displayValue, setDisplayValue] = useState(0);
   
@@ -18,23 +21,24 @@ const Counter = ({ value, className }: { value: number; className: string }) => 
     let startTime: number | null = null;
     const duration = 2000; // 2 seconds duration
     
-    if (isInView) {
-      const updateCounter = (timestamp: number) => {
-        if (!startTime) startTime = timestamp;
-        const elapsedTime = timestamp - startTime;
-        
-        if (elapsedTime < duration) {
-          const progress = elapsedTime / duration;
-          // Use easeOutExpo for a nice deceleration effect
-          const easeOutExpo = 1 - Math.pow(2, -10 * progress);
-          const currentValue = Math.floor(startValue + easeOutExpo * (value - startValue));
-          setDisplayValue(currentValue);
-          animationFrameId = requestAnimationFrame(updateCounter);
-        } else {
-          setDisplayValue(value);
-        }
-      };
+    const updateCounter = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const elapsedTime = timestamp - startTime;
       
+      if (elapsedTime < duration) {
+        const progress = elapsedTime / duration;
+        // Use easeOutQuad for a smoother animation
+        const easeOutQuad = progress * (2 - progress);
+        const currentValue = Math.floor(startValue + easeOutQuad * (value - startValue));
+        setDisplayValue(currentValue);
+        animationFrameId = requestAnimationFrame(updateCounter);
+      } else {
+        setDisplayValue(value);
+      }
+    };
+    
+    // Only start animation when in view
+    if (isInView) {
       animationFrameId = requestAnimationFrame(updateCounter);
     }
     
@@ -72,7 +76,10 @@ const LowBanner = () => {
             </motion.div>
             <div className="flex flex-col">
               <div className="text-xl xl:text-3xl md:text-2xl font-bold text-white">
-                <Counter value={feature.count} className="" />
+                <Counter 
+                  value={feature.count} 
+                  className="block" 
+                />
               </div>
               <motion.div 
                 initial={{ opacity: 0 }}
