@@ -1,45 +1,67 @@
 "use client";
 
-import React, { useState, useEffect, Key } from "react";
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { useLocale } from "../hooks/useLocals";
 import { t } from "../utils/i18n";
 import "./landing.css";
 
 const Landing = () => {
   const [wallpaperNumber, setWallpaperNumber] = useState(1);
-  const [backgroundImage, setBackgroundImage] = useState(
-    `url('/images/${wallpaperNumber}.jpg')`
-  );
-
+  const [nextWallpaperNumber, setNextWallpaperNumber] = useState(2);
+  const [transitioning, setTransitioning] = useState(false);
   const { locale } = useLocale();
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setWallpaperNumber((prevNumber) => (prevNumber === 8 ? 1 : prevNumber + 1));
+      setTransitioning(true);
+      setTimeout(() => {
+        setWallpaperNumber((prevNumber) => (prevNumber === 8 ? 1 : prevNumber + 1));
+        setNextWallpaperNumber((prevNumber) => (prevNumber === 8 ? 1 : prevNumber + 1));
+        setTransitioning(false);
+      }, 1000);
     }, 4000);
     return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      setBackgroundImage(`url('/images/${wallpaperNumber}.jpg')`);
-    }, 500);
-    return () => clearTimeout(timeout);
+    setNextWallpaperNumber((prevNumber) => (wallpaperNumber === 8 ? 1 : wallpaperNumber + 1));
   }, [wallpaperNumber]);
 
   return (
     <div
       key={locale} // This key will force re-render when locale changes
       className="landing"
-      style={{
-        backgroundImage: backgroundImage,
-        transition: "background-image 1s ease-in-out",
-      }}
     >
-      <div
-        className="overlay"
-        style={{ backgroundImage: "url('/assets/bottleShape.png')" }}
-      ></div>
+      {/* Active wallpaper */}
+      <div className={`wallpaper-container ${transitioning ? "fade-out" : ""}`}>
+        <Image
+          src={`/images/${wallpaperNumber}.jpg`}
+          alt="Wallpaper"
+          fill
+          priority
+          quality={85}
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+          }}
+        />
+      </div>
+
+      {/* Preload next wallpaper */}
+      <div className={`wallpaper-container ${transitioning ? "fade-in" : "hidden"}`}>
+        <Image
+          src={`/images/${nextWallpaperNumber}.jpg`}
+          alt="Next Wallpaper"
+          fill
+          quality={85}
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+          }}
+        />
+      </div>
+
       <div className="text">
         <div className="content">
           <h1 className="first text-2xl font-black text-white">
