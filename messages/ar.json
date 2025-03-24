@@ -95,5 +95,49 @@
   "actbtn3":"العطور",
   "actbtn4":"الملونات",
   "searchlabel":"ابحث عن المادة هنا باللغة الانكليزية"
-}
+},"organazation":{
+    "title":"كادر الشركة",
+    "member":{
+      "Founder":{
+        "position":"المؤسس",
+        "name":"محمود حمزة"
+      },
+      "CEO":{
+        "position":"المدير التنفيذي",
+        "name":"مصطفى حمزة"
+      },
+      "Sales Manager":{
+        "position":"مدير المبيعات",
+        "name":"محمد الصعيدي"
+      },
+      "Warehouse Staff1":{
+        "position":"مسؤول مستودع",
+        "name":"بلال بداير"
+      },
+      "Warehouse Staff2":{
+        "position":"مسؤول مستودع",
+        "name":"وسام ابوزهرة"
+      },
+      "Accountant":{
+        "position":"المحاسب",
+        "name":"غسان عودة"
+      },"Sales Staff1":{
+        "position":"مسؤول مبيعات",
+        "name":"قمر المغربي"
+      },"Sales Staff2":{
+        "position":"مسؤول مبيعات",
+        "name":"شهيرة الصعيدي"
+      },"Sales Staff3":{
+        "position":"مسؤول مبيعات (المنصب الثاني)",
+        "name":"وسام ابوزهرة"
+      }
+
+    }
+    ,
+    "department1":"المستودعات",
+    "department2":"المحاسبة",
+    "department3":"المبيعات",
+    "sloganMid":"الفريق",
+    "sloganBottom":"تعاون • ابداع • مهارة"
+  }
 }
