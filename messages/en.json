@@ -111,5 +111,50 @@
     "actbtn3":"Fragrance",
     "actbtn4":"Colors",
   "searchlabel":"Search Products..."
+  },
+  "organazation":{
+    "title":"Company Organization",
+    "member":{
+      "Founder":{
+        "position":"Founder",
+        "name":"Mahmoud Hamzeh"
+      },
+      "CEO":{
+        "position":"CEO",
+        "name":"Mustafa Hamzeh"
+      },
+      "Sales Manager":{
+        "position":"Sales Manager",
+        "name":"Mohammad Alsaeedi"
+      },
+      "Warehouse Staff1":{
+        "position":"Warehouse Staff",
+        "name":"Belal Bdair"
+      },
+      "Warehouse Staff2":{
+        "position":"Warehouse Staff",
+        "name":"Wesam Abozahra"
+      },
+      "Accountant":{
+        "position":"Accountant",
+        "name":"Ghassam Odeh"
+      },"Sales Staff1":{
+        "position":"Sales Staff",
+        "name":"Qamar Almogharbi"
+      },"Sales Staff2":{
+        "position":"Sales Staff",
+        "name":"Shahira Alsaeedi"
+      },"Sales Staff3":{
+        "position":"Sales Staff(Dual Role)",
+        "name":"Wesam Abozahra"
+      }
+
+    }
+    ,
+    "department1":"Warehouse",
+    "department2":"Accounting",
+    "department3":"Sales",
+     "sloganMid":"Team",
+    "sloganBottom":"Collaboration • Innovation • Excellence"
   }
 }
