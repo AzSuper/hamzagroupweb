@@ -104,7 +104,9 @@
     "activehour":"Business Hours: From 10:00 To 18:00",
     "quicklinks":"Links",
     "contactus":"Contact us",
-    "ourlocations":"Location"
+    "ourlocations":"Location",
+      "fac":"Factory",
+     "store":"Store"
   },
   "product":{
     "title": "Product List",
