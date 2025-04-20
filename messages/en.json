@@ -50,17 +50,14 @@
     ]
   },
 
-  "footer":{
-    "company": "Company",
-    "about": "About",
-    "product": "Product",
-    "contact": "Contact",
-    "slogan":"Delivering Quality Chemicals Worldwide",
-    "activehour":"Business Hours: From 10:00 To 18:00",
-    "quicklinks":"Links",
-    "contactus":"Contact us",
-    "ourlocations":"Location"
-  },
+  "footer": {
+    "slogan": "Delivering Quality Chemicals Worldwide",
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "product": "Product",
+      "contact": "Contact"
+    },
     "business_hours": "Business Hours: From 10:00 To 18:00",
     "email": "hamzagroup145@gmail.com",
     "phone": "+963 998 768 696",
@@ -104,7 +101,10 @@
     "product": "Product",
     "contact": "Contact",
     "slogan":"Delivering Quality Chemicals Worldwide",
-    "activehour":"Business Hours: From 10:00 To 18:00"
+    "activehour":"Business Hours: From 10:00 To 18:00",
+    "quicklinks":"Links",
+    "contactus":"Contact us",
+    "ourlocations":"Location"
   },
   "product":{
     "title": "Product List",
@@ -132,11 +132,11 @@
       },
       "Warehouse Staff1":{
         "position":"Warehouse Staff",
-        "name":"Belal Bdir"
+        "name":"Belal Bdair"
       },
       "Warehouse Staff2":{
         "position":"Warehouse Staff",
-        "name":"Wesam Abozahra(Dual Role)"
+        "name":"Wesam Abozahra"
       },
       "Accountant":{
         "position":"Accountant",
@@ -148,7 +148,7 @@
         "position":"Sales Staff",
         "name":"Shahira Alsaeedi"
       },"Sales Staff3":{
-        "position":"Sales Staff",
+        "position":"Sales Staff(Dual Role)",
         "name":"Wesam Abozahra"
       }
 
