@@ -50,14 +50,17 @@
     ]
   },
 
-  "footer": {
-    "slogan": "Delivering Quality Chemicals Worldwide",
-    "navigation": {
-      "home": "Home",
-      "about": "About",
-      "product": "Product",
-      "contact": "Contact"
-    },
+  "footer":{
+    "company": "Company",
+    "about": "About",
+    "product": "Product",
+    "contact": "Contact",
+    "slogan":"Delivering Quality Chemicals Worldwide",
+    "activehour":"Business Hours: From 10:00 To 18:00",
+    "quicklinks":"Links",
+    "contactus":"Contact us",
+    "ourlocations":"Location"
+  },
     "business_hours": "Business Hours: From 10:00 To 18:00",
     "email": "hamzagroup145@gmail.com",
     "phone": "+963 998 768 696",
