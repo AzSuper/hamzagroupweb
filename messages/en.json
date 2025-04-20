@@ -129,11 +129,11 @@
       },
       "Warehouse Staff1":{
         "position":"Warehouse Staff",
-        "name":"Belal Bdair"
+        "name":"Belal Bdir"
       },
       "Warehouse Staff2":{
         "position":"Warehouse Staff",
-        "name":"Wesam Abozahra"
+        "name":"Wesam Abozahra(Dual Role)"
       },
       "Accountant":{
         "position":"Accountant",
@@ -145,7 +145,7 @@
         "position":"Sales Staff",
         "name":"Shahira Alsaeedi"
       },"Sales Staff3":{
-        "position":"Sales Staff(Dual Role)",
+        "position":"Sales Staff",
         "name":"Wesam Abozahra"
       }
 
