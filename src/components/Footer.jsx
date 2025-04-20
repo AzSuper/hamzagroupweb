@@ -40,13 +40,13 @@ const locations = [
   {
     name: "Factory",
     mapUrl:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.4628874975254!2d36.192192!3d33.539413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518dea3fde8e6b5%3A0x9637356d7ad174c2!2z2KfZhNin2LPZiNin2YIg2Ygg2KfZhNmF2K7Yp9iy2YYg2KfZhNmF2LHZg9iy2YrYqQ!5e0!3m2!1sen!2snl!4v1740731611988!5m2!1sen!2snl",
+      "https://maps.app.goo.gl/Y26DhSN54isJfqP8A",
     address: "Factory Location, Damascus, Syria",
   },
   {
     name: "Store",
     mapUrl:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.9794108057263!2d36.302489!3d33.549709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518e7d6f5284d99%3A0xc814adc1c65624bd!2sHamza%20Group!5e0!3m2!1sen!2sus!4v1713722496231!5m2!1sen!2sus",
+      "https://maps.app.goo.gl/wyiZjbuo98sMrMdp8",
     address: "Store Location, Damascus, Syria",
   },
 ];
