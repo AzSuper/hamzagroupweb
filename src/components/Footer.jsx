@@ -44,13 +44,13 @@ const Footer = () => {
     {
       name: t("footer.fac", locale),
       mapUrl:
-        "https://maps.app.goo.gl/Y26DhSN54isJfqP8A",
+        "https://www.google.com/maps/place/ميليا%E2%80%AD/@33.6193749,36.588975,17z/data=!3m1!4b1!4m6!3m5!1s0x1518f50022b84077:0x327d7d6076913f88!8m2!3d33.6193749!4d36.588975!16s%2Fg%2F11vyysbfmy?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D",
       address: "Factory Location, Damascus, Syria",
     },
     {
       name: t("footer.store", locale),
       mapUrl:
-        "https://maps.app.goo.gl/wyiZjbuo98sMrMdp8",
+        "https://www.google.com/maps/place/33°30'18.2"N+36°18'45.2"E/@33.5050447,36.3125334,20.5z/data=!4m4!3m3!8m2!3d33.505061!4d36.312553?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D8",
       address: "Store Location, Damascus, Syria",
     },
   ];
