@@ -36,24 +36,24 @@ const footerLinks = [
   },
 ];
 
-const locations = [
-  {
-    name: "Factory",
-    mapUrl:
-      "https://maps.app.goo.gl/Y26DhSN54isJfqP8A",
-    address: "Factory Location, Damascus, Syria",
-  },
-  {
-    name: "Store",
-    mapUrl:
-      "https://maps.app.goo.gl/wyiZjbuo98sMrMdp8",
-    address: "Store Location, Damascus, Syria",
-  },
-];
-
 const Footer = () => {
   const { locale } = useLocale();
   const [activeLocation, setActiveLocation] = useState(0);
+
+  const locations = [
+    {
+      name: t("footer.fac", locale),
+      mapUrl:
+        "https://maps.app.goo.gl/Y26DhSN54isJfqP8A",
+      address: "Factory Location, Damascus, Syria",
+    },
+    {
+      name: t("footer.store", locale),
+      mapUrl:
+        "https://maps.app.goo.gl/wyiZjbuo98sMrMdp8",
+      address: "Store Location, Damascus, Syria",
+    },
+  ];
 
   return (
     <footer className="bg-gradient-to-b from-gray-900 to-black text-gray-200 pb-10 px-5 md:px-10 lg:px-20 pt-20 relative overflow-hidden">
