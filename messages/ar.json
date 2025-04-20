@@ -130,10 +130,10 @@
       },
       "Warehouse Staff1":{
         "position":"مسؤول مستودع",
-        "name":"بلال بداير"
+        "name":"بلال بدير"
       },
       "Warehouse Staff2":{
-        "position":"مسؤول مستودع",
+        "position":"(المنصب الثاني)مسؤول مستودع",
         "name":"وسام ابوزهرة"
       },
       "Accountant":{
@@ -141,12 +141,12 @@
         "name":"غسان عودة"
       },"Sales Staff1":{
         "position":"مسؤول مبيعات",
-        "name":"قمر المغربي"
+        "name":"قمر المغربل"
       },"Sales Staff2":{
         "position":"مسؤول مبيعات",
         "name":"شهيرة الصعيدي"
       },"Sales Staff3":{
-        "position":"مسؤول مبيعات (المنصب الثاني)",
+        "position":"مسؤول مبيعات",
         "name":"وسام ابوزهرة"
       }
     },
