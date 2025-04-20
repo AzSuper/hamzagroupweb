@@ -44,13 +44,13 @@ const Footer = () => {
     {
       name: t("footer.fac", locale),
       mapUrl:
-        "https://www.google.com/maps/place/ميليا%E2%80%AD/@33.6193749,36.588975,17z/data=!3m1!4b1!4m6!3m5!1s0x1518f50022b84077:0x327d7d6076913f88!8m2!3d33.6193749!4d36.588975!16s%2Fg%2F11vyysbfmy?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.4628874975254!2d36.192192!3d33.539413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518dea3fde8e6b5%3A0x9637356d7ad174c2!2z2KfZhNin2LPZiNin2YIg2Ygg2KfZhNmF2K7Yp9iy2YYg2KfZhNmF2LHZg9iy2YrYqQ!5e0!3m2!1sen!2snl!4v1740731611988!5m2!1sen!2snl",
       address: "Factory Location, Damascus, Syria",
     },
     {
       name: t("footer.store", locale),
       mapUrl:
-        "https://www.google.com/maps/place/33°30'18.2"N+36°18'45.2"E/@33.5050447,36.3125334,20.5z/data=!4m4!3m3!8m2!3d33.505061!4d36.312553?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D8",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.9794108057263!2d36.302489!3d33.549709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518e7d6f5284d99%3A0xc814adc1c65624bd!2sHamza%20Group!5e0!3m2!1sen!2sus!4v1713722496231!5m2!1sen!2sus",
       address: "Store Location, Damascus, Syria",
     },
   ];
@@ -195,7 +195,15 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} Hamza Group. All rights
               reserved.
             </p>
-            <p className="mt-2 md:mt-0">Designed by Mohammad Abo Zamel</p>
+            <p className="mt-2 md:mt-0">
+              Designed by{" "}
+              <a
+                href="https://mohammadabozamel.vercel.app"
+                className="font-black"
+              >
+                Mohammad Abo Zamel
+              </a>
+            </p>
           </div>
         </div>
       </div>
